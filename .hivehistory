@@ -1,0 +1,77 @@
+pig
+version
+q
+quit
+/q
+create table if not exists bxdataset
+(isbn string, 
+booktitle string,
+bookauthor sgring,
+yearofpublication string,
+publisher string,
+imageurls string,
+imageurlm string,
+imageurll string)
+comment 'bx-books table'
+row format delimited
+fields terminated by '\;'
+stored as textfile;
+CREATE TABLE IF NOT EXISTS BXDataSet 
+    >   (ISBN STRING, 
+    >   BookTitle STRING, 
+    >   BookAuthor STRING, 
+    >   YearOfPublication STRING, 
+    >   Publisher STRING, 
+    >   ImageURLS STRING, 
+    >   ImageURLM STRING, 
+    >   ImageURLL STRING) 
+    > COMMENT 'BX-Books Table'
+    > ROW FORMAT DELIMITED  
+    > FIELDS TERMINATED BY '\;' 
+stored as textilfe;
+CREATE TABLE IF NOT EXISTS BXDataSet 
+       (ISBN STRING, 
+       BookTitle STRING, 
+       BookAuthor STRING, 
+       YearOfPublication STRING, 
+       Publisher STRING, 
+       ImageURLS STRING, 
+       ImageURLM STRING, 
+       ImageURLL STRING) 
+     COMMENT 'BX-Books Table'
+     ROW FORMAT DELIMITED  
+     FIELDS TERMINATED BY '\;' 
+     STORED AS TEXTFILE;
+create table test (test string)
+;
+create table bx(BootTitle STRING) STORED AS TEXTFILE;
+exit
+;
+create table bx(bt STRING) STORED AS TEXTFILE;
+create table bx(xy STRING) STORED AS TEXTFILE;
+drop tabke bx;
+drop table bx;
+CREATE TABLE IF NOT EXISTS BXDataSet 
+       (ISBN STRING, 
+       BookTitle STRING, 
+       BookAuthor STRING, 
+       YearOfPublication STRING, 
+       Publisher STRING, 
+       ImageURLS STRING, 
+       ImageURLM STRING, 
+       ImageURLL STRING) 
+     COMMENT 'BX-Books Table'
+     ROW FORMAT DELIMITED  
+     FIELDS TERMINATED BY '\;' 
+     STORED AS TEXTFILE;
+load data inpath '/home/labuser20/input/BX-BooksCorrected.csv' OVERWRITE INTO TABLE BXDataSet
+;
+LOAD DATA INPATH '/home/labuser20/input/BX-BooksCorrected.csv' OVERWRITE INTO TABLE BXDataSet;
+select yearofpublication, count(booktitle) from bxdataset group by yearofpublication;
+select * from bxdataset limit 1000
+;
+select yearofpublication, count(bookauthor) from bxdataset group by yearofpublication;
+select yearofpublication, count(booktitle) from bxdataset group by yearofpublication;
+quit
+;
+select yearofpublication, count(booktitle) from bxdataset group by yearofpublication;
